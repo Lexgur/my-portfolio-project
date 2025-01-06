@@ -1,0 +1,178 @@
+$xl: 1400px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(to bottom, #e2e8f0, #e7e5e4);
+
+
+    .wrapper {
+        max-width: $xl;
+        width: 100%;
+        height: 100vh;
+
+        header {
+            
+            .dot-container {
+                position: absolute;
+                display: grid;
+                grid-template-columns: repeat(5, auto);
+                grid-template-rows: repeat(5, auto);
+                gap: 10px;
+                margin-top: 40px;
+                margin-left: -900px;
+                justify-content: center;
+                align-items: center;
+                z-index: 50;
+
+                .dot {
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background-color: #c4b5fd;
+                    opacity: 69%;
+                    
+                }
+            }
+            margin: 30px auto;
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo {
+                width: 25px;
+                height: 25px;
+            }
+
+            .name {
+                font-size: 1rem;
+                font-weight: 700;
+                color: #44403c;
+                margin-left: 30px;
+                margin-top: -27px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #44403c;
+            }
+
+            .nav {
+                gap: 20px;
+                max-width: 500px;
+                justify-content: space-between;
+                display: flex;
+                margin-left: 50%;
+                span {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: #ac5cc0;
+                }
+
+                
+            }
+        }
+
+        main {
+            .me {
+                .dot-container {
+
+                        position: absolute;
+                        display: grid;
+                        grid-template-columns: repeat(5, auto);
+                        grid-template-rows: repeat(5, auto);
+                        gap: 10px;
+                        margin-top: 40px;
+                        margin-left: 940px;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 50;
+
+                        .dot {
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            background-color: #c4b5fd;
+                            opacity: 69%;
+                            
+                        }
+                    }
+                }
+                .square {
+                    margin-left: 827px;
+                    margin-top: 211px;
+                    width: 9px;
+                    height: 9px;
+                    background-color: #ac5cc0;
+                    position: absolute;
+                }
+                .bordered {
+                    margin-left: 826px;
+                    margin-top: 210px;
+                    width: 220px;
+                    line-height: 10px;
+                    font-size: 10px;
+                    border: 1px solid #000000;
+                    text-align: center;
+                    span{
+                        font-weight: 700;
+
+                    }
+                }
+                .ernest {
+                    opacity: 0%;
+                    margin-left: 40%;
+                    margin-top: 10px;
+                    width: 30px;
+                    height: 30px;
+                }
+                &:hover .ernest {
+                    opacity: 100%;
+                    filter: drop-shadow(0 0 0.2rem #ac5cc0);
+                    transition: all 0.7s ease-out;
+                }
+                .me-text {
+                    margin-left: 171px;
+                    margin-top: 136px;
+                    max-width: 537px;
+                    h1{
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #44403c;
+                        line-height: 28px;
+                    }
+                    p {
+                        margin-top: 10px;
+                        font-size: 12px;
+                        color: #44403c60;
+                        line-height: 20px;
+                    }
+                    span {
+                        font-weight: 700;
+                        color: #ac5cc0;
+                    }
+                }
+                .me-pic{
+                    z-index: 10;
+                    display: flex;
+                    margin-left: 826px;
+                    margin-top: -200px;
+                    .port{
+                        position: absolute;
+                        width: 200px;
+                        height: 200px;
+                        filter: drop-shadow(0 0 0.2rem #ac5cc0);
+                    }
+                }
+            }
+        }
+    }
