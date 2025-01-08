@@ -108,7 +108,7 @@
                     <div class="me-pic"><img src="pics/port.svg" alt="portrait" class="port"></div>
                     <div class="square"></div>
                     <p class="bordered">Currently working on <span>Portfolio</span></p>
-                    <a class="duck-button" href="#secret"><img src="pics/ernest.svg" alt="rubber-duck"
+                    <a class="duck-button" href="pages/secret.html"><img src="pics/ernest.svg" alt="rubber-duck"
                             class="ernest"></a>
                 </div>
                 <div class="quote">
@@ -380,5 +380,16 @@
         </div>
     </footer>
 </body>
+<script>
+    document.querySelector('.duck-button').addEventListener('click', function (event) {
+        event.preventDefault(); 
+        const link = this.href; 
+        document.body.classList.add('glitch-effect'); 
 
+        setTimeout(() => {
+            document.body.classList.remove('glitch-effect'); 
+            window.location.href = link; 
+        }, 1000); 
+    });
+</script>
 </html>
